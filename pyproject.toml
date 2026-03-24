@@ -1,0 +1,20 @@
+[project]
+name = "fastapi-mcp"
+version = "0.1.0"
+description = "FastAPI + MCP coding test project"
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "fastapi[standard]>=0.135.2",
+    # ASGI server
+    "uvicorn[standard]>=0.30.0",
+    # Database (async)
+    "sqlalchemy>=2.0.30",
+    "aiosqlite>=0.20.0",
+    # Pydantic extras (for EmailStr, etc.)
+    "pydantic[email]>=2.7.0",
+    "ruff>=0.15.7",
+    "greenlet>=3.3.2",
+    "isort>=8.0.1",
+]
